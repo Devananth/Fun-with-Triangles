@@ -27,16 +27,16 @@
         
     </div>
 
-    <form class="container">
+    <form>
         
         <div  class="form-group">
             <label>BASE </label>
-            <input type="number" class="base" placeholder="Enter the base value" min='1' max='180' required>
+            <input type="number" class="base" placeholder="Enter the base value" min="1" max="999" required>
         </div>
         
         <div class="form-group">
             <label>HEIGHT</label>
-            <input type="number" class="height" placeholder="Enter the height value" min='1' max='180' required>
+            <input type="number" class="height" placeholder="Enter the height value" min="1" max="999" required>
         </div>
     
         <div>
@@ -81,13 +81,12 @@
 
 
     <script>
-
         var base = document.querySelector('.base');
         var height = document.querySelector('.height');
         var btn = document.querySelector('.calculate');
         var opt = document.querySelector('.output');
 
-        btn.addEventListener('click' , (e) => {
+        document.addEventListener('submit' , (e) => {
 
             e.preventDefault();
 
@@ -100,8 +99,7 @@
 
             opt.style.display = "block";
 
-        })
-
+        });
     </script>
 
 
