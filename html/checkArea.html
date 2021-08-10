@@ -21,7 +21,7 @@
     </div>
     
 
-    <div class="container">
+    <form class="container">
 
         <div class="form-group">
             <label for="base">BASE</label>
@@ -37,7 +37,7 @@
 
         <div class="output"></div>
 
-    </div>
+    </form>
 
     <div class="footer">
 
@@ -75,8 +75,10 @@
         var btn = document.querySelector('.calculate');
         var output = document.querySelector('.output');
 
-        btn.addEventListener('click' , () => {
+        btn.addEventListener('click' , (e) => {
 
+            e.preventDefault();
+            
             let b = base.value;
             let h = height.value;
 

@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+button{
+    cursor :pointer;
+}
+
 label{
     display : block;
     margin-bottom: .5rem;
@@ -32,7 +36,7 @@ input{
     padding : .5rem 1rem;
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover , button:hover{
     background : wheat;
 }
 

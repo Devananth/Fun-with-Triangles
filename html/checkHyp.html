@@ -27,16 +27,16 @@
         
     </div>
 
-    <div class="container">
+    <form class="container">
         
         <div  class="form-group">
             <label>BASE </label>
-            <input type="number" class="base" min='1' max='180' required>
+            <input type="number" class="base" placeholder="Enter the base value" min='1' max='180' required>
         </div>
         
         <div class="form-group">
             <label>HEIGHT</label>
-            <input type="number" class="height" min='1' max='180' required>
+            <input type="number" class="height" placeholder="Enter the height value" min='1' max='180' required>
         </div>
     
         <div>
@@ -45,7 +45,7 @@
         
         <div class="output"></div>
 
-    </div>
+    </form>
 
     
 
@@ -87,14 +87,16 @@
         var btn = document.querySelector('.calculate');
         var opt = document.querySelector('.output');
 
-        btn.addEventListener('click' , () => {
+        btn.addEventListener('click' , (e) => {
+
+            e.preventDefault();
 
             let b = base.value;
             let h = height.value;
 
             let hyp = Math.sqrt((b*b) + (h*h)).toFixed(2);
 
-            opt.innerText = "Hypotenuse = " + hyp;
+            opt.innerText = "Hypotenuse = " + hyp + " cm";
 
             opt.style.display = "block";
 
