@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+
+body{
+    background: url('/images/wave.png') no-repeat center center/cover;
+    max-width: 700px;
+    max-height: 100vh;
+    text-align: center;
+    margin : auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+label{
+    display : block;
+    font-size : 1.2rem;
+}
+
+input{
+    margin : .5rem 1rem;
+    cursor: pointer;
+}
+
+
+.secondary-btn{
+    margin-top : 2.4rem;
+    padding : .5rem 1.5rem ;
+    border-radius : .5rem;
+}
+
+.secondary-btn:hover{
+    background-color : wheat;
+}
+
+.form{
+    margin : 2rem;
+}
+
+.qns{
+    border : 1px solid black;
+    margin : 5rem;
+    border-radius: 1rem;
+    background-color: rgba(236 , 247 , 249 , 1);
+    box-shadow: 10px 10px 15px black;
+
+}
+
+.submit{
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    background-color : blueviolet;
+    color : white;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color :rgba(236 , 247 , 249 , 1);
+    color : black;
+}
+
+.output{
+    display: none;
+    border : 1px solid red;
+    padding : 1rem;
+    margin : 1rem;
+    border-radius : .5rem;
+    background-color: wheat;
+}
+
+
+.social { 
+    display :flex;
+    flex-direction : row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.links{
+    font-size : 1.5rem;
+    margin : 2rem;
+}
+
+.links a:hover{
+    background-color : skyblue;
+    padding : 1rem;
+}

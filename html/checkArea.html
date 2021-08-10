@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/areaStyles.css">
+    <title>Triangles</title>
+</head>
+<body>
+    
+    <button class="secondary-btn">
+        <a href="../index.html">Go Back</a>
+    </button>
+
+    <div class="header">
+        <h2>Calculate the area of the triangle</h2>
+        <br>
+        <h3>Area of the triangle = 1/2 * base * height</h3>
+    </div>
+    
+
+    <div class="container">
+
+        <div class="form-group">
+            <label for="base">BASE</label>
+            <input type="number" class="base" placeholder="Enter the base value" min="1" max="999" required>
+        </div>
+
+        <div class="form-group">
+            <label for="height">HEIGHT</label>
+            <input type="number" class="height" placeholder="Enter the height value" min="1" max="999" required>
+        </div>
+
+        <button class="calculate">Calculate</button>
+
+        <div class="output"></div>
+
+    </div>
+
+    <div class="footer">
+
+        <ul class="social">
+
+            <li class="links"><a href="https://github.com/Devananth" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            
+            <li class="links">
+                <a href="https://www.linkedin.com/in/devananth-a-60634219a/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            
+            <li class="links"><a href="https://twitter.com/devananthnkl" target="_blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            
+            <li class="links"><a href="https://devananthnkl.netlify.app/" target="_blank">
+                <i class="fas fa-briefcase"></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script>
+
+        var base = document.querySelector('.base');
+        var height = document.querySelector('.height');
+        var btn = document.querySelector('.calculate');
+        var output = document.querySelector('.output');
+
+        btn.addEventListener('click' , () => {
+
+            let b = base.value;
+            let h = height.value;
+
+            let area = (( 1.0/2.0 ) * b * h ).toFixed(2);
+
+            output.innerText = "The area of the triangle is " + area;
+
+            output.style.display = "block";
+
+        });
+
+
+    </script>
+
+</body>
+</html>
